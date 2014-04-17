@@ -1,0 +1,15 @@
+<?php if(!defined('IN_MEIU')) exit('Access Denied'); ?><div class="col titbg">
+<?php if(IN_ACT=='index') { ?><h1 class="f_left"><?php echo lang("basic_setting"); ?></h1><?php } else { ?><h4 class="f_left"><a href="<?php echo site_link("setting","index",array()); ?>"><?php echo lang("basic_setting"); ?></a></h4><?php } ?>
+<?php if(IN_ACT=='display') { ?><h1 class="f_left"><?php echo lang("display_setting"); ?></h1><?php } else { ?><h4 class="f_left"><a href="<?php echo site_link("setting","display",array()); ?>"><?php echo lang("display_setting"); ?></a></h4><?php } ?>
+<?php if(IN_ACT=='language') { ?><h1 class="f_left"><?php echo lang("language_and_locale"); ?></h1><?php } else { ?><h4 class="f_left"><a href="<?php echo site_link("setting","language",array()); ?>"><?php echo lang("language_and_locale"); ?></a></h4><?php } ?>
+<?php if(IN_ACT=='upload') { ?><h1 class="f_left"><?php echo lang("upload_setting"); ?></h1><?php } else { ?><h4 class="f_left"><a href="<?php echo site_link("setting","upload",array()); ?>"><?php echo lang("upload_setting"); ?></a></h4><?php } ?>
+<?php if(IN_ACT=='watermark') { ?><h1 class="f_left"><?php echo lang("watermark_setting"); ?></h1><?php } else { ?><h4 class="f_left"><a href="<?php echo site_link("setting","watermark",array()); ?>"><?php echo lang("watermark_setting"); ?></a></h4><?php } ?>
+<?php if(IN_ACT=='themes') { ?><h1 class="f_left"><?php echo lang("theme_setting"); ?></h1><?php } else { ?><h4 class="f_left"><a href="<?php echo site_link("setting","themes",array()); ?>"><?php echo lang("theme_setting"); ?></a></h4><?php } ?>
+<?php if(IN_ACT=='plugins') { ?><h1 class="f_left"><?php echo lang("plugin_setting"); ?></h1><?php } else { ?><h4 class="f_left"><a href="<?php echo site_link("setting","plugins",array()); ?>"><?php echo lang("plugin_setting"); ?></a></h4><?php } ?>
+<?php if(IN_ACT=='nav') { ?><h1 class="f_left"><?php echo lang("setting_nav"); ?></h1><?php } else { ?><h4 class="f_left"><a href="<?php echo site_link("setting","nav",array()); ?>"><?php echo lang("setting_nav"); ?></a></h4><?php } ?>
+<?php if(IN_CTL=='category'&&IN_ACT=='manage') { ?><h1 class="f_left"><?php echo lang("category_manage"); ?></h1><?php } else { ?><h4 class="f_left"><a href="<?php echo site_link("category","manage",array()); ?>"><?php echo lang("category_manage"); ?></a></h4><?php } ?>
+<?php echo $setting_menu;?>
+<?php if(IN_CTL=='comments') { ?><h1 class="f_left"><?php echo lang("comments_manage"); ?></h1><?php } else { ?><h4 class="f_left"><a href="<?php echo site_link("comments","manage",array()); ?>"><?php echo lang("comments_manage"); ?></a></h4><?php } ?>
+<?php if(IN_ACT=='info') { ?><h1 class="f_left"><?php echo lang("system_info"); ?></h1><?php } else { ?><h4 class="f_left"><a href="<?php echo site_link("setting","info",array()); ?>"><?php echo lang("system_info"); ?></a></h4><?php } ?>
+<?php echo $setting_menu;?>
+</div>
